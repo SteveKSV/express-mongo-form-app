@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with styles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <div class="heading-container">
+            <h1>Give your contacts</h1>
+            <p>For us to know about your account!</p>           
+        </div>
+
+        <div class="container-form">
+            <form action="#" method="post" id="myForm">
+                <input 
+                    type="text" 
+                    tabindex="1" 
+                    id='firstName' 
+                    name="firstName" 
+                    placeholder="First name"
+                    required>
+                <input 
+                    type="text" 
+                    tabindex="2" 
+                    id='lastName' 
+                    name="lastName" 
+                    placeholder="Last Name"
+                    required>
+                <input 
+                    type="number" 
+                    tabindex="3" 
+                    id='age' 
+                    name="age" 
+                    placeholder="Age"
+                    required>
+                <select 
+                    name="country" 
+                    tabindex="4" 
+                    id='country'>
+                        <option value="Ukraine">Ukraine</option>
+                        <option value="England" selected>England</option>
+                        <option value="USA">USA</option>
+                        <option value="Japan">Japan</option>
+                </select>
+                <input 
+                    type="tel" 
+                    tabindex="5" 
+                    id='phone' 
+                    name="phone" 
+                    placeholder="+38 (xxx) xxx-xx-xx"
+                    required>
+                <input 
+                    type="submit" 
+                    tabindex="6" 
+                    id='customSubmit'>
+                <input 
+                    type="reset" 
+                    tabindex="7" 
+                    id='customReset'>
+            </form>
+        </div>
+    </main>
+
+    <script src="clientSide.js">
+        
+    </script>
+</body>
+</html>

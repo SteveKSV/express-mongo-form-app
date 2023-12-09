@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: cursive, sans-serif;
+    background-color: rgb(240, 229, 215);
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.heading-container h1 {
+    font-size: 7.5vh;
+    text-align: center;
+    color: rgb(157, 34, 130);
+}
+
+.heading-container p {
+    font-size: 3vh;
+    text-align: center;
+    color: blueviolet;
+}
+
+.container-form{
+    max-width: 30%;
+    margin: 0px auto;
+}
+
+#myForm {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 10px 15px 10px;
+    align-items: center;
+}
+
+#myForm input,
+#myForm select {
+    width: 100%; 
+    box-sizing: border-box; 
+    margin-bottom: 10px;
+    background-color: violet;
+    color: rgb(255, 255, 255);
+}
+
+#myForm input::placeholder {
+    color: rgb(17, 17, 205);
+    opacity: 0.5;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#customSubmit:hover,
+#customReset:hover {
+    background-color: rgb(127, 68, 127);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#myForm select {
+    cursor: pointer;
+}
+
+#myForm select option {
+    background-color: rgb(127, 68, 127);
+    padding: 30px;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+}
+
+#myForm input:invalid + span {
+    border: 1px solid black;
+    color: #FF6347;
+}
+
+@media (max-width: 846px) {
+    .container-form{
+        max-width: 50%;
+        margin: 0px auto;
+    }
+}
+
+/*For responsive page*/
+@media (max-width: 660px) {
+    .container-form{
+        max-width: 70%;
+        margin: 0px auto;
+    }
+}
+
+@media (max-width: 460px) {
+    .container-form{
+        max-width: 80%;
+        margin: 0px auto;
+    }
+    
+    #myForm input, select {
+        font-size: 18px;
+        padding: 10px
+    }
+
+    #customSubmit {
+        margin-top: 50px
+    }
+}
