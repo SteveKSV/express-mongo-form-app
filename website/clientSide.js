@@ -3,7 +3,7 @@ async function CreateUser(userFirstName, userLastName, userAge, userCountry, use
         method: "POST",
         headers: { "Accept": "application/json", "Content-Type": "application/json" },
         body: JSON.stringify({
-            name: `${userFirstName} ${userLastName}`,  // Fix the variable names here
+            name: `${userFirstName} ${userLastName}`,
             age: parseInt(userAge, 10),
             country: userCountry,
             phone: userPhone,
@@ -11,7 +11,7 @@ async function CreateUser(userFirstName, userLastName, userAge, userCountry, use
     });
 
     if (response.ok === true) {
-        const user = await response.json();
+        alert('Contact was added successfully!')
         customFormReset();
     }
 }
